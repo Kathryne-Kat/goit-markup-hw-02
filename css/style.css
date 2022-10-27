@@ -5,14 +5,15 @@
   --title-text-color: #212121;
   --accent-text-color: #2196f3;
   --accent-text-color2: #ffffff;
-  --accent-button-color2: #2196f3;
+  --button-color: #f5f4fa;
+  --accent-button-color: #2196f3;
 }
 body {
   color: var(--primary-text-color);
-  background-color: #ffffff;
+  background-color: var(--primary-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   line-height: 1.7;
 }
 .list {
@@ -73,7 +74,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.button {
+.button-hero {
   color: var(--accent-text-color2);
   background-color: var(--accent-text-color);
   border: none;
@@ -84,10 +85,12 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
+  cursor: pointer;
 }
-.button:hover,
-.button:focus {
-  background-color: var(--accent-button-color2);
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--accent-button-color);
 }
 /*------section---------*/
 .section-title {
@@ -122,19 +125,63 @@ body {
   line-height: 1.2;
 }
 /*-----footer-----*/
-footer {
+.footer {
   background-color: var(--accent-color);
 }
 .logo .acsent {
   color: var(--accent-text-color2);
 }
 
-.footer-address .address {
+.contacts .address {
   color: var(--accent-text-color2);
   text-decoration: none;
   font-style: normal;
 }
-.footer-address .mail,
-.footer-address .phone {
+.contacts .link {
   color: var(--primary-text-color);
+  font-style: normal;
+}
+/*-----pjrtfolio-----*/
+
+.portfolio-button {
+  background-color: var(--button-color);
+  color: var(--title-text-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  border: none;
+
+  cursor: pointer;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--accent-button-color);
+  color: var(--accent-text-color2);
+}
+.portfolio-list li {
+  border: 1px solid #eeeeee;
+}
+.portfolio-title {
+  color: #212121;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-list p {
+  color: var(--primary-text-color);
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+}
+.portfolio-list a {
+  text-decoration: none;
 }
