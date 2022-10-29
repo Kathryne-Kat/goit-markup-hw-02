@@ -1,12 +1,10 @@
 :root {
   --primary-color: #ffffff;
   --accent-color: #2f303a;
+  --accent-color2: #f5f4fa;
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-text-color: #2196f3;
-  --accent-text-color2: #ffffff;
-  --button-color: #f5f4fa;
-  --accent-button-color: #2196f3;
 }
 body {
   color: var(--primary-text-color);
@@ -65,7 +63,7 @@ body {
 }
 /*------hero---------*/
 .hero-title {
-  color: var(--accent-text-color2);
+  color: var(--primary-color);
 
   font-weight: 900;
   font-size: 44px;
@@ -75,7 +73,7 @@ body {
   text-transform: uppercase;
 }
 .button-hero {
-  color: var(--accent-text-color2);
+  color: var(--primary-color);
   background-color: var(--accent-text-color);
   border: none;
 
@@ -90,7 +88,7 @@ body {
 }
 .button-hero:hover,
 .button-hero:focus {
-  background-color: var(--accent-button-color);
+  background-color: var(--accent-text-color);
 }
 /*------section---------*/
 .section-title {
@@ -115,6 +113,9 @@ body {
 .work-list {
 }
 /*-----team-----*/
+.section.team {
+  background-color: var(--accent-color2);
+}
 .team-list .name {
   color: var(--title-text-color);
 
@@ -131,11 +132,11 @@ body {
   background-color: var(--accent-color);
 }
 .logo .acsent {
-  color: var(--accent-text-color2);
+  color: var(--primary-color);
 }
 
 .contacts .address {
-  color: var(--accent-text-color2);
+  color: var(--primary-color);
   text-decoration: none;
   font-style: normal;
   line-height: 1.7;
@@ -148,7 +149,7 @@ body {
 /*-----pjrtfolio-----*/
 
 .portfolio-button {
-  background-color: var(--button-color);
+  background-color: var(--accent-text-color2);
   color: var(--title-text-color);
 
   font-family: inherit;
@@ -162,7 +163,7 @@ body {
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
-  background-color: var(--accent-button-color);
+  background-color: var(--accent-text-color);
   color: var(--accent-text-color2);
 }
 .portfolio-list li {
